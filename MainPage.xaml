@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Rembrandt.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Rembrandt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RembrandtGrid">
+        <Grid.Background>
+            <AcrylicBrush TintColor="#CC9E9E9E" TintOpacity="0.6" Opacity="0.395" FallbackColor="#CC9E9E9E" BackgroundSource="HostBackdrop"/>
+        </Grid.Background>
+        <InkCanvas x:Name="Inky" Margin="0,55,0,0"/>
+        <InkToolbar x:Name="InkyToolbar" TargetInkCanvas="{x:Bind Inky}" HorizontalAlignment="Left" Margin="145,10,0,0" VerticalAlignment="Top" Width="209"></InkToolbar>
+        <AppBarButton x:Name="OpenButton" Icon="Folder" Margin="10,10,0,0" Width="40" Height="40" CornerRadius="20,20,20,20" ToolTipService.ToolTip="Open an existing drawing"/>
+        <AppBarButton x:Name="SaveButton" Icon="Save" Margin="55,10,0,0" Width="40" Height="40" CornerRadius="20,20,20,20" ToolTipService.ToolTip="Save your drawing"/>
+        <AppBarButton x:Name="DeleteButton" Icon="Delete" Margin="100,10,0,0" Width="40" Height="40" ToolTipService.ToolTip="Delete this drawing" CornerRadius="20,20,20,20"/>
+    </Grid>
+</Page>
