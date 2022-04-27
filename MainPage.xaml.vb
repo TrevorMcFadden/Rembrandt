@@ -5,7 +5,6 @@ Imports Windows.UI.Input.Inking
 
 Public NotInheritable Class MainPage
     Inherits Page
-    Public Property _removed As IReadOnlyList(Of InkStroke)
     Public Sub New()
         Me.InitializeComponent()
         Inky.InkPresenter.InputDeviceTypes = Windows.UI.Core.CoreInputDeviceTypes.Mouse Or Windows.UI.Core.CoreInputDeviceTypes.Pen
